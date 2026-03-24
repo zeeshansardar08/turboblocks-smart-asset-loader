@@ -1,0 +1,80 @@
+/**
+ * TurboBlocks admin styles.
+ *
+ * @package TurboBlocks
+ */
+
+.zntb-wrap {
+	max-width: 800px;
+}
+
+.zntb-wrap .zntb-section {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px 24px;
+	margin-bottom: 20px;
+}
+
+.zntb-wrap .zntb-section h2 {
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 1.15em;
+}
+
+.zntb-wrap .zntb-section h3 {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	font-size: 1em;
+}
+
+.zntb-wrap .form-table th {
+	width: 220px;
+	padding-left: 0;
+}
+
+.zntb-asset-table {
+	margin-top: 8px;
+}
+
+.zntb-asset-table .check-column {
+	width: 30px;
+	padding: 8px 0 8px 10px;
+}
+
+.zntb-asset-table td,
+.zntb-asset-table th {
+	vertical-align: middle;
+}
+
+.zntb-asset-table .zntb-src {
+	color: #666;
+	font-size: 12px;
+	word-break: break-all;
+}
+
+.zntb-debug-table td {
+	padding: 8px 10px;
+}
+
+.zntb-debug-table td:first-child {
+	width: 180px;
+}
+
+.zntb-section-danger {
+	border-color: #d63638;
+}
+
+.zntb-section-danger h2 {
+	color: #d63638;
+}
+
+.zntb-reset-btn {
+	color: #d63638 !important;
+	border-color: #d63638 !important;
+}
+
+.zntb-reset-btn:hover {
+	background: #d63638 !important;
+	color: #fff !important;
+}
