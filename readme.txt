@@ -1,7 +1,7 @@
 === TurboBlocks – Smart Asset Loader ===
 Contributors:      zignites
 Tags:              performance, assets, scripts, styles, speed
-Requires at least: 5.8
+Requires at least: 6.0
 Tested up to:      6.9.4
 Requires PHP:      7.4
 Stable tag:        1.0.0
