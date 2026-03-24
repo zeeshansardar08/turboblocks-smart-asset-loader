@@ -95,7 +95,7 @@ TurboBlocks solves this by:
 
 ## Requirements
 
-* WordPress 5.8+
+* WordPress 6.0+
 * PHP 7.4+
 
 ---

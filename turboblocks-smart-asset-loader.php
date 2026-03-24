@@ -3,7 +3,7 @@
  * Plugin Name:       TurboBlocks – Smart Asset Loader
  * Description:       Unload unused scripts and styles with safe global controls and WooCommerce optimization. Improve performance safely with a beginner-friendly interface.
  * Version:           1.0.0
- * Requires at least: 5.8
+ * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Zignites
  * Author URI:        https://zignites.com/
