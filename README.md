@@ -1,42 +1,34 @@
-# 🚀 TurboBlocks – Smart Asset Loader
+# TurboBlocks – Smart Asset Loader
 
-Unload unused scripts & styles in WordPress based on actual block usage.
+Unload unused scripts & styles in WordPress with safe global controls and WooCommerce optimization.
 
-TurboBlocks is a lightweight performance plugin designed for modern WordPress (Gutenberg & Full Site Editing). It intelligently prevents unnecessary assets from loading, helping you reduce page size, improve Core Web Vitals, and speed up your site — without complex configuration.
+TurboBlocks is a lightweight performance plugin for WordPress. It safely prevents unnecessary CSS and JavaScript from loading on pages where they are not needed — reducing page size, improving Core Web Vitals, and speeding up your site without complex configuration.
 
 ---
 
-## ✨ Why TurboBlocks?
+## Why TurboBlocks?
 
 Most WordPress plugins load their CSS/JS on every page — even when not used.
 
 TurboBlocks solves this by:
 
-* Detecting which blocks are actually used
-* Preventing unused scripts/styles from loading
-* Giving you safe, simple control over asset loading
+* Letting you view and disable unnecessary scripts and styles globally
+* Automatically removing WooCommerce assets on non-shop pages
+* Protecting core WordPress assets from accidental removal
 
 ---
 
-## ⚡ Key Features (MVP)
+## Key Features (MVP)
 
-### 🧩 Block Detection Engine
+### Global Asset Control
 
-* Detects Gutenberg blocks used on a page
-* Uses `parse_blocks()` with fallback support
-* Foundation for block-based optimization
-
----
-
-### ⚙️ Global Asset Control
-
-* View all enqueued scripts and styles
-* Disable unnecessary assets globally
+* View all enqueued scripts and styles from a single settings page
+* Disable unnecessary assets globally with checkboxes
 * Safe and controlled unloading
 
 ---
 
-### 🛒 WooCommerce Kill Switch
+### WooCommerce Kill Switch
 
 * Disable WooCommerce scripts on non-shop pages
 * Works with:
@@ -47,7 +39,7 @@ TurboBlocks solves this by:
 
 ---
 
-### 🧯 Safe Mode (Default ON)
+### Safe Mode (Default ON)
 
 * Prevents accidental site breakage
 * Only allows safe asset removal
@@ -55,24 +47,25 @@ TurboBlocks solves this by:
 
 ---
 
-### 🖥️ Simple Admin Interface
+### Simple Admin Interface
 
 * Clean and beginner-friendly UI
 * No overwhelming options
 * Quick toggles for optimization
+* Settings link on the Plugins page
 
 ---
 
-## 🎯 Plugin Goals
+## Plugin Goals
 
 * Improve performance without complexity
-* Reduce script bloat in Gutenberg/FSE sites
+* Reduce script and style bloat on WordPress sites
 * Provide safe and predictable optimizations
 * Work out-of-the-box with minimal configuration
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. Download or clone this repository:
 
@@ -100,33 +93,30 @@ TurboBlocks solves this by:
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
-* WordPress 6.0+
+* WordPress 5.8+
 * PHP 7.4+
-* Gutenberg / Block Editor enabled
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ```text
 Page Load
    ↓
-Detect Blocks (parse_blocks)
-   ↓
 Get Enqueued Scripts/Styles
    ↓
-Apply Rules (User Settings)
+Check User Settings + Safe Mode Rules
    ↓
-Dequeue Unused Assets
+Dequeue Disabled Assets
    ↓
 Render Optimized Page
 ```
 
 ---
 
-## 🔐 Safety First
+## Safety First
 
 TurboBlocks is built with safety in mind:
 
@@ -137,18 +127,17 @@ TurboBlocks is built with safety in mind:
 
 ---
 
-## 🚧 Roadmap (Upcoming Features)
+## Roadmap (Upcoming Features)
 
 * Per-page asset control
+* Block-based conditional asset loading
 * Smart auto-detection of unused assets
 * Frontend debug mode
 * Performance insights dashboard
-* Advanced rule engine
-* AI-based optimization suggestions
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -160,7 +149,7 @@ Please follow:
 
 ---
 
-## 🧪 Development Notes
+## Development Notes
 
 * Prefix: `zntb_`
 * Class Prefix: `ZNTB_`
@@ -169,13 +158,13 @@ Please follow:
 
 ---
 
-## 📄 License
+## License
 
 This plugin is licensed under the GPL v2 or later.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Developed by **Zignites**
 
