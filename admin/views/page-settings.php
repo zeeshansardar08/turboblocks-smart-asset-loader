@@ -105,18 +105,18 @@ $zntb_debug_info = ZNTB_Admin::get_debug_info();
 								</tr>
 							</thead>
 							<tbody>
-							<?php foreach ( $zntb_snapshot['scripts'] as $handle => $src ) : ?>
+							<?php foreach ( $zntb_snapshot['scripts'] as $zntb_handle => $zntb_src ) : ?>
 								<tr>
 									<td>
 										<input
 											type="checkbox"
 											name="<?php echo esc_attr( ZNTB_Settings::OPTION_KEY ); ?>[disabled_scripts][]"
-											value="<?php echo esc_attr( $handle ); ?>"
-											<?php checked( in_array( $handle, $zntb_settings['disabled_scripts'], true ) ); ?>
+											value="<?php echo esc_attr( $zntb_handle ); ?>"
+											<?php checked( in_array( $zntb_handle, $zntb_settings['disabled_scripts'], true ) ); ?>
 										/>
 									</td>
-									<td><code><?php echo esc_html( $handle ); ?></code></td>
-									<td class="zntb-src"><?php echo esc_html( $src ); ?></td>
+									<td><code><?php echo esc_html( $zntb_handle ); ?></code></td>
+									<td class="zntb-src"><?php echo esc_html( $zntb_src ); ?></td>
 								</tr>
 							<?php endforeach; ?>
 							</tbody>
@@ -136,18 +136,18 @@ $zntb_debug_info = ZNTB_Admin::get_debug_info();
 								</tr>
 							</thead>
 							<tbody>
-							<?php foreach ( $zntb_snapshot['styles'] as $handle => $src ) : ?>
+							<?php foreach ( $zntb_snapshot['styles'] as $zntb_handle => $zntb_src ) : ?>
 								<tr>
 									<td>
 										<input
 											type="checkbox"
 											name="<?php echo esc_attr( ZNTB_Settings::OPTION_KEY ); ?>[disabled_styles][]"
-											value="<?php echo esc_attr( $handle ); ?>"
-											<?php checked( in_array( $handle, $zntb_settings['disabled_styles'], true ) ); ?>
+											value="<?php echo esc_attr( $zntb_handle ); ?>"
+											<?php checked( in_array( $zntb_handle, $zntb_settings['disabled_styles'], true ) ); ?>
 										/>
 									</td>
-									<td><code><?php echo esc_html( $handle ); ?></code></td>
-									<td class="zntb-src"><?php echo esc_html( $src ); ?></td>
+									<td><code><?php echo esc_html( $zntb_handle ); ?></code></td>
+									<td class="zntb-src"><?php echo esc_html( $zntb_src ); ?></td>
 								</tr>
 							<?php endforeach; ?>
 							</tbody>
