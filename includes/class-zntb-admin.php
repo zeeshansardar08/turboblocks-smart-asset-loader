@@ -165,6 +165,41 @@ class ZNTB_Admin {
 	}
 
 	/**
+	 * Check if an asset handle is considered "heavy" for visual flagging.
+	 *
+	 * @param string $zntb_handle The asset handle name.
+	 * @return bool
+	 */
+	public static function is_heavy_asset( $zntb_handle ) {
+		$zntb_patterns = array( 'woo', 'woocommerce', 'cart', 'checkout', 'analytics', 'klaviyo' );
+		$zntb_lower    = strtolower( $zntb_handle );
+
+		foreach ( $zntb_patterns as $zntb_pattern ) {
+			if ( false !== strpos( $zntb_lower, $zntb_pattern ) ) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	 * Shorten a full asset URL to a relative path for display.
+	 *
+	 * @param string $zntb_url The full source URL.
+	 * @return string The shortened path.
+	 */
+	public static function shorten_asset_src( $zntb_url ) {
+		if ( empty( $zntb_url ) ) {
+			return '';
+		}
+
+		$zntb_parsed = wp_parse_url( $zntb_url, PHP_URL_PATH );
+
+		return $zntb_parsed ? $zntb_parsed : $zntb_url;
+	}
+
+	/**
 	 * Render the settings page.
 	 *
 	 * @return void

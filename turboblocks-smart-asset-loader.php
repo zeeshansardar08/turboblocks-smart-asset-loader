@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       TurboBlocks – Smart Asset Loader
+ * Plugin Name:       TurboBlocks – Smart Asset Loader (Disable Unused CSS & JS)
  * Description:       Unload unused scripts and styles with safe global controls and WooCommerce optimization. Improve performance safely with a beginner-friendly interface.
  * Version:           1.0.0
  * Requires at least: 6.0
